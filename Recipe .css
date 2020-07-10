@@ -1,0 +1,80 @@
+/* inspect=not have to comment and uncomment 
+-px used. could change to relative to make sure
+
+*/
+
+
+html, body
+{
+    margin: 0px;
+}
+
+h1
+{
+    text-align: center;
+    color: white;
+    background-color: green;
+    margin: 0px;
+    position: fixed;
+    top: 0px; /* position */
+    width: 100%;
+    
+}
+nav ul /* defaults back to this when not hovering */
+{
+    /* display: none; */
+    /* relative? 2nd guy mentioned it*/
+    padding-left: 25px;
+}
+nav
+{
+    background-color: greenyellow;
+    width: 20em; /* making smaller, so OK? */
+    height: 20px;
+    margin-top: 37px;
+    overflow: hidden; /* this, alongside height, makes it work */
+
+    transition: height 0.5s; /* if not possible to do display, how to? */
+}
+nav:hover /* whenever either one "happens", and if it's not happening, e.g. nav ul:hover, then it's not affected? */
+{
+    /* display: block; */
+    height: 100px;
+}
+
+nav a:hover
+{
+    text-shadow: 0px 0px 5px red;
+    /* How to open details menu when hovering? is that JS? */
+}
+img
+{
+    width: 20em;
+    border: 5px solid black;
+    padding: 10px;
+}
+section
+{
+    margin-left: 30px;
+    font-size: 130%
+}
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse; /* inherited, but whatevs */
+}
+th, td
+{
+    padding: 0.5rem;
+}
+#happy
+{
+    background: url("/images/Happy pic.png");
+    position: fixed;
+    bottom: 0px; 
+    right: 0px;
+
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
